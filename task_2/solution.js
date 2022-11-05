@@ -62,11 +62,7 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
     // создайте переменную freeShipping
     let freeShipping;
     // запишите без использования if или любых других условий:
-    if (shippingSum == 0) {
-        freeShipping = true;
-    } else {
-        freeShipping = false;
-    }
+    shippingSum == 0 ? freeShipping = true : freeShipping = false;
     // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
 
     // Конец решения задачи №2.3.
